@@ -25,17 +25,10 @@ with open("input.txt", "r", encoding = 'utf8') as file:
         while test_out[-1] == "\n":
             test_out = test_out.removesuffix("\n")
 
-        if ans_out != test_out:
-            print("錯誤")
-            print(f"測資： {s}")
-            print(f"正確為：{ans_out}")
-            print(f"您的輸入為：{test_out}")
-
-        else:
-            print("正確")
-            print(f"測資： {s}")
-            print(f"正確為：{ans_out}")
-            print(f"您的輸入為：{test_out}")
+        print(test_out == ans_out)
+        print(f"測資： {s}")
+        print(f"正確為：{ans_out}")
+        print(f"您的輸入為：{test_out}")
         
         print("===============================================")
         print()
